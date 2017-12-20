@@ -1,0 +1,19 @@
+{% extends "cafeteria/base.html" %}
+
+{% block title %}
+谢谢!
+{% endblock %}
+
+{% block content %}
+    <h8>谢谢 </h8>
+    <p>您的订单已完成！编号为
+<strong>{{ order.id }}</strong>。</p>
+
+<p class="text-middle">
+    <a href="{% url "orders:order_create" %}" class="button">
+    去评价
+    </a>
+
+</p>
+
+{% endblock %}
